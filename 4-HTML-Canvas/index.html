@@ -1,39 +1,46 @@
 <!DOCTYPE html>
-
+<html>
   <head>
+    <title>Get Computed</title>
+    <style>
+      body {background-color: wheat;}
 
-    <title>HTML Basic</title>
-    <link rel="stylesheet" href="style.css">
+      .chunk, h1 {
+        color: red;
+      }
+      .chunk {
+        margin: 20px;
+        padding: 20px;
+        border-style: solid;
+        border-width: medium;
+        border-color: red;
+      }
+      h1 {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 370%;
+      }
+      p {
+      }
+  </style>
+</head>
 
+<body>
+  <h1 align="center">Do You Need Something Computed?</h1>
+  <div class="chunk">
+    <h2>Do you suffer from any of the following?</h2>
+    <p>—repetitive tasks</p>
+    <p>—inefficient, hard to keep track of forms/documents</p>
+    <p>—burning app ideas for the next big that you don't know how to move forward with</p>
+  </div>
 
-  </head>
+  <div class="chunk">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p>
+  </div>
 
-  <body>
-    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000; background-color:#fff"></canvas>
-
-    <script>
-    var canvas = document.getElementById("myCanvas");
-    var ctx = canvas.getContext("2d");
-    ctx.fillStyle = "#FF0000";
-    ctx.fillRect(0, 0, 150, 75);
-    </script>
-
-      <h1> Hi </h1>
-      <p> this is some text </p>
-
-      <p id="p01">this is special text</p>
-
-      <p class = "error"> this is part of another class </p>
-
-      <button type="button"
-      onclick="document.getElementById('demo').innerHTML = Date()">
-      Click me to display Date and Time.</button>
-      <p id="demo"></p>
-
-
-      <script> document.getElementById("demo").style.fontSize = "25px"; </script>
-
-  </body>
-
-
+  <div class="chunk">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+</body>
 </html>
